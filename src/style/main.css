@@ -1,0 +1,305 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  position: relative;
+  text-align: center;
+}
+
+.menuicon {
+  width: 16%;
+  margin-top: 1%;
+}
+
+.page__search {
+  background-color: #ac433a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  padding-bottom: 3%;
+  padding-top: 3%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page__error {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background-color: #f44336;
+}
+
+.pokemons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.pokemons__item {
+  display: inline-flex;
+  margin: 10px;
+  padding: 0px;
+  box-shadow: 0px 0px 9px #b5b5b5;
+}
+
+.pokemon {
+  position: relative;
+  z-index: 20000;
+  overflow: hidden;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.pokemon__sprite {
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.pokemon,
+.pokemon__sprite {
+}
+
+.pokemon__name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.re-card {
+  width: 400px;
+  background-color: white;
+  padding: 3%;
+  padding-left: 3%;
+  border-radius: 0px;
+}
+
+.card-bottom {
+  width: 100%;
+  height: 22px;
+  /* background-color: black; */
+  border-top: solid 1px #e0dfdf;
+  padding-top: 2%;
+  padding: 2%;
+  padding-top: 4%;
+}
+
+.edit-btn {
+  float: right;
+  /* background-color: #00a4ff; */
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 0px;
+  margin-top: 3%;
+}
+
+.indi-box {
+  padding-top: 3%;
+}
+
+.searchbox {
+  width: 81%;
+  -ms-flex-align: center;
+  align-items: center;
+  display: inline-block;
+  border-radius: 50px;
+  float: right;
+  margin-right: 3%;
+}
+
+.indi-list {
+  text-align: left;
+  padding-top: 11%;
+  font-size: 18px;
+  padding-left: 0;
+}
+
+.rating {
+  float: left;
+  font-weight: 800;
+  background-color: #cacaca;
+  color: #ffffff;
+  padding: 3%;
+  border-radius: 23px;
+  padding-left: 6%;
+  padding-right: 6%;
+  width: fit-content;
+}
+
+.seemore {
+  position: absolute;
+  bottom: 6%;
+  text-align: center;
+  color: #6d6d6d;
+  right: 6%;
+}
+
+.indi-title {
+  background-color: #6b6b6b;
+  padding: 3%;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 0px;
+  /* padding-left: 4%; */
+  font-weight: 600;
+}
+
+.indi-quant {
+  float: right;
+  color: #ffffff82;
+  margin-right: 3%;
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+.indi-item {
+  background-color: #de4f42;
+  border-radius: 0px;
+  /* padding-left: 10px; */
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 14px;
+  margin-top: 3px;
+  text-align: left;
+  padding-left: 4%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.bottomnav {
+  background-color: transparent;
+  width: 100%;
+  height: 6%;
+  position: fixed;
+  bottom: 0px;
+}
+.container-fluid {
+  position: relative;
+  overflow: auto;
+  margin-bottom: 13%;
+  padding: 4%;
+  padding-top: 20%;
+  overflow-x: hidden;
+}
+.plus {
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.addbtn {
+  width: 70px;
+  height: 70px;
+  font-size: 1;
+  padding-bottom: 0px;
+  clear: both;
+  border-radius: 50%;
+  background-color: #ac433a;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: -35px;
+  border: solid 3px #de4f4200;
+  -webkit-box-shadow: 0px 2px 25px #0000007a;
+  box-shadow: 0px 2px 8px #0000007a;
+  position: absolute;
+  left: 17px;
+}
+
+.slideup-title {
+  text-align: left;
+  /* margin-left: 8px; */
+  background-color: #ac433a;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2%;
+  font-size: 27px;
+  width: 100%;
+  padding-left: 6%;
+  box-shadow: 0px 2px 8px #6b6b6b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.newrecipe {
+  padding: 5%;
+  top: 100%;
+  z-index: 40;
+  box-shadow: 0px 2px 30px #626262;
+  transition: 0.5s;
+  padding-top: 21%;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  background-color: white;
+  overflow: scroll;
+  padding-bottom: 11%;
+}
+
+.inputslide {
+  margin-bottom: 5%;
+  border-radius: 0;
+  text-decoration: none;
+  border: solid 1x #ccc;
+  padding: 7%;
+  font-size: 22px;
+  position: relative;
+  border-style: solid;
+}
+
+.savebtn {
+  position: absolute;
+  bottom: 0;
+  position: absolute;
+  bottom: 0;
+  background-color: #db5038;
+  color: white;
+  width: 50%;
+  border-radius: 0;
+  height: 8%;
+  padding: 3%;
+  font-size: 25px;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 700px) {
+  .pokemon,
+  .pokemon__sprite {
+  }
+  .re-card {
+    width: 67%;
+  }
+}
