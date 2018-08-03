@@ -1,4 +1,4 @@
-# Mainou's Recipe Lab
+# Mainou's Recipe Lab- Made for World Code Gym Hackathon
 
 Mobile Web Application. (PWA)
 
